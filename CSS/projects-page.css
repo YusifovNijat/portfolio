@@ -1,0 +1,9 @@
+#projects {
+    width: 100%;
+    height: 100vh;
+    background: black;
+}
+#projects img {
+    width: 100%;
+    height: 70%;
+}

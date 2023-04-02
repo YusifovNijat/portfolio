@@ -1,0 +1,101 @@
+header {
+    display: flex;
+}
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../Images/home-background.jpg');
+    background-size: cover;
+}
+.menu {
+    background-color: slateblue;
+    width: 50%;
+    height: 100vh;
+    padding: 50px;
+    z-index: 1000;
+}
+
+.menu li {
+    border-bottom: 1px solid var(--second-text-color);
+    text-align: center;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.menu li:last-child{
+    border-bottom: none;
+}
+
+.menu li a {
+    color: var(--text-color);
+    font-size: 20px;
+}
+.menu li a:hover {
+    color: var(--active);
+    font-weight: bold;
+}
+.close {
+    display: none;
+}
+.open {
+    display: block;
+}
+header .bx-menu {
+    color: var(--text-color);
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.home-info {
+    width: 100%;
+    display: flex;
+}
+
+.home-text {
+    width: 50%;
+    color: var(--text-color);
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.home-text h2 {
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 6px rgb(33, 0, 200);
+}
+
+.home-text span {
+    color: var(--active);
+    text-shadow: 4px 4px 6px rgb(151, 155, 50);
+}
+
+.active {
+    color: var(--active) !important;
+}
+
+.home-text a {
+    background: var(--active);
+    color: var(--second-text-color);
+    font-weight: 900;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.home-image {
+    width: 50%;
+    height: 300px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+.home-image img {
+    width: 580px;
+    height: 590px
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Nijat Yusifov Portfolio</title>
+</head>
+<body>
+
+    <div class="loader">
+        <div class="bar">
+            <img src="Images/red-rocket.png" alt="" class="rocket">
+            <div class="bar-line"></div>
+        </div>
+        <h1 class="loader-text">0</h1>
+    </div>
+
+    <!--HOME PAGE -->
+
+    <section id="home">
+        <header class="header">
+            <!-- <a href="" class="logo">Logo</a> -->
+            <ul class="menu close">
+                <li><a data-link="home" class="nav home active">Home</a></li>
+                <li><a data-link="about" class="nav about">About</a></li>
+                <li><a data-link="skills" class="nav skills">Skills</a></li>
+                <li><a data-link="projects" class="nav projects">Projects</a></li>
+                <li><a data-link="contact" class="nav contact">Contact</a></li>
+            </ul>
+            <i class='bx bx-menu'></i>
+        </header>
+
+        <div class="home-info">
+            <div class="home-text">
+                 <h1>Hi, I am <span>Nijat Yusifov</span><br>And I am <span>Front-end Developer</span></h1> 
+                 <h2>Welcome to my World!</h2>
+                <a href="Files/Nijat Yusifov CV.pdf" download>Download CV</a> 
+            </div>
+            <div class="home-image">
+                <img src="Images/my-bitmoji.png" alt="">
+            </div>
+        </div> 
+    </section>
+
+    <button id="return"><i class='bx bx-chevron-up' ></i></button>
+
+    <!--ABOUT SECTION-->
+    <section id="about">
+        <div class="about-info">
+            <h2>About me</h2>
+            <p>Hi, I am Nijat and I was born in 1999 in Baku, Azerbaijan. Currently, I am living in Warsaw, Poland. 
+                I was interested in creating mobile applications and games since my childhood, and decided to learn coding 3 years ago. After two bachelor degrees at Azerbaijan Tourism and Management University as well as Austrian IMC Fachhochschule Krems in 'Tourism and Leisure Management', I decided to test myself also in another industry as well.
+                Afterwards, I applied and was accepted to Warsaw University of Technology. Unfortunately, because of some personal reasons I had to stop my education. 
+                 </p>
+        </div>
+        <div class="about-image">
+            <img src="Images/my-about.png" alt="" class="my-about">
+        </div>
+    </section>
+
+    <!--SKILLS SECTION-->
+    <section id="skills">
+        <div class="skills-info">
+            <h2>Skills & Experience</h2>
+            <p> I am familiar with a variety of technologies and programming languages, including JavaScript, HTML, CSS, SASS/SCSS/LESS, React, Redux, Git, Bootstrap, but I am always adding new skills to my repertoire. I am also eager to meet other experienced people in the area, get more knowledge from them and get my first job as a junior front-end developer, so feel free to connect!</p>
+        </div>
+        <div class="skills-table">
+            <h3>HTML</h3>
+            <div class="skills-container">
+                <div class="html"></div>
+            </div>
+            <h3>CSS</h3>
+            <div class="skills-container">
+                <div class="css"></div>
+            </div>
+            <h3>JavaScript</h3>
+            <div class="skills-container">
+                <div class="js"></div>
+            </div>
+            <h3>React JS</h3>
+            <div class="skills-container">
+                <div class="react"></div>
+            </div>
+            <h3>TypeScript</h3>
+            <div class="skills-container">
+                <div class="ts"></div>
+            </div>
+            <h3>MySql</h3>
+            <div class="skills-container">
+                <div class="mysql"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--PROJECTS SECTION-->
+    <section id="projects">
+        <h1>Projects</h1>
+    </section>
+
+
+    <!--Contact-->
+    <section id="contact">
+        <form onsubmit="sendEmail(); reset(); return false">
+            <h3>GET IN TOUCH</h3>
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone number" required>
+            <textarea id="message" rows="4" placeholder="Please leave your message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="logo-container">
+            <i class='bx bxl-linkedin'>
+                <a href="https://www.linkedin.com/in/nijat-yusifov-47b369198/"></a>
+            </i>
+            <i class='bx bxl-whatsapp' >
+                <a href=""></a>
+            </i>
+            <i class='bx bxl-instagram' >
+                <a href=""></a>
+            </i>
+        </div>
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+</html>
